@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="leyu_yellow">#f87001</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="dark_gray">#707070</color>
+    <color name="light_gray">#d8d8d8</color>
+    <color name="orange">#9b450a</color>
+    <color name="login_bg">#d6dee0</color>
+    <color name="login_dialog_bg">#f4f4f4</color>
+    <color name="login_tab_text_gray">#999999</color>
+    <color name="login_item_gray">#dfdfdf</color>
+
+    <drawable name="transparent">@android:color/transparent</drawable>
+
+</resources>

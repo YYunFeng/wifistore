@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:background="@color/white"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp" >
+
+    <ImageView
+        android:id="@+id/icon_view"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_launcher" />
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="55dp"
+        android:layout_height="36dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/blue_border_btn"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/cancel"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/cancel_btn"
+        android:layout_toRightOf="@+id/icon_view"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/app_name_view"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:singleLine="true"
+            android:text="@string/waiting"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="21dp" >
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_alignParentBottom="true"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/progress_bar" />
+
+            <TextView
+                android:id="@+id/down_tip"
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:layout_alignParentBottom="true"
+                android:text="@string/waiting"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

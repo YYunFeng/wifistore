@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/login_item_margin"
+    android:background="@drawable/login_item_bg"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/login_res_tip_tv"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/login_item_height"
+        android:layout_weight="3"
+        android:background="@color/login_item_gray"
+        android:gravity="center"
+        android:textColor="@color/login_tab_text_gray"
+        android:textSize="@dimen/login_item_text_font" />
+
+    <EditText
+        android:id="@+id/login_res_input_tv"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/login_item_height"
+        android:layout_weight="7"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/login_arrow"
+        android:gravity="center_vertical"
+        android:hint=""
+        android:imeOptions="actionNext"
+        android:singleLine="true" />
+
+</LinearLayout>

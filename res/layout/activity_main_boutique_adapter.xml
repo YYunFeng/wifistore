@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp" >
+
+    <ImageView
+        android:id="@+id/app_iv"
+        android:layout_width="@dimen/main_app_icon_size"
+        android:layout_height="@dimen/main_app_icon_size"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/loading" />
+
+    <Button
+        android:id="@+id/app_install_btn"
+        android:layout_width="@dimen/install_btn_width"
+        android:layout_height="@dimen/install_btn_height"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/orange_border_btn"
+        android:focusable="false"
+        android:gravity="center"
+        android:text="@string/install"
+        android:textColor="@color/orange" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/app_install_btn"
+        android:layout_toRightOf="@+id/app_iv"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <TextView
+            android:id="@+id/app_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/app_company_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/login_tab_text_gray"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

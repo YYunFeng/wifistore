@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar"
+        android:background="@drawable/top_bar_bg" >
+
+        <TextView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:drawableLeft="@drawable/btn_back"
+            android:drawablePadding="0dp"
+            android:gravity="center_vertical"
+            android:onClick="onBackAction"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/search_btn"
+            android:layout_width="@dimen/action_bar_item_heigt"
+            android:layout_height="@dimen/action_bar_item_heigt"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:focusable="true"
+            android:onClick="onSearchAction"
+            android:scaleType="fitXY"
+            android:src="@drawable/main_search_icon" />
+
+        <EditText
+            android:id="@+id/search_input"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_bar_item_heigt"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/search_btn"
+            android:layout_toRightOf="@+id/back_btn"
+            android:background="@drawable/edit_text_bg"
+            android:gravity="center"
+            android:hint="@string/search_hint"
+            android:singleLine="true"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:imeOptions="actionSearch"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/listview" />
+
+</LinearLayout>

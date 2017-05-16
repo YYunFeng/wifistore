@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">精品应用</string>
+    <string name="is_quit_tip">是否退出程序?</string>
+    <string name="network_error_tip">数据获取失败，请检查网络</string>
+    <string name="no_data_tip">暂无数据</string>
+    <string name="search_hint">请输入关键词</string>
+    <string name="search_keyword_tip">关键词不得超过40个汉字</string>
+    <string name="loading">加载中....</string>
+    <string name="loading_fail">加载失败</string>
+    <string name="downloading">下载中</string>
+    <string name="waiting">等待下载中....</string>
+    <string name="retry">重试</string>
+    <string name="start_download">开始下载</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="tip">温馨提示</string>
+    <string name="sdcard_invalid">SD卡不可用</string>
+    <string name="unenough_available_sdcard_size">SD卡没有足够的空间</string>
+    <string name="exist_download_list">下载列表中已存在，请勿重复添加</string>
+    <string name="fail_download_list">下载失败，点击按钮重试</string>
+    <string name="install">安装</string>
+    <string name="one_key_install">一键安装</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="back">返回</string>
+    <string name="login_name_hint">请输入用户名</string>
+    <string name="login_passwd_hint">请输入密码</string>
+    <string name="forget_passwd">忘记密码？</string>
+    <string name="verify_code">验证码</string>
+    <string name="boutique">精品</string>
+    <string name="topic">专题</string>
+    <string name="select_share_title">请选择分享方式</string>
+    <string name="app_intro">应用简介</string>
+    <string name="binding_router">正在搜索附近WiFi热点</string>
+    <string name="bind_ok">连接WiFi热点成功</string>
+    <string name="bind_fail">路由器异常</string>
+    <string name="upgrade_fail">更新失败</string>
+    <string name="upgrade_loading">正在检查更新....</string>
+    <string name="upgrade_intro">更新说明</string>
+    <string name="version_code">版本号：</string>
+    <string name="upgrade">更新</string>
+    <string name="client_no_update">当前为最新版</string>
+    <string name="double_click_quit">再次点击退出程序</string>
+    <string name="network_change_tip">网络发生改变,需要重新启动软件!</string>
+    <string name="quit">退出</string>
+    <string name="restart">重启</string>
+    <string name="sale_name">促销员名字：</string>
+    <string name="sale_id">促销员工号：</string>
+    <string name="bind_sale">绑定</string>
+    <string name="bind_sale_success">绑定促销员成功</string>
+
+    <string-array name="login_res_array">
+        <item>邮箱注册</item>
+        <item>用户名称</item>
+        <item>密码</item>
+        <item>密码确认</item>
+    </string-array>
+
+</resources>

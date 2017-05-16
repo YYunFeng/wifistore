@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar"
+        android:background="@drawable/top_bar_bg" >
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/shop_bg" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/action_bar_item_heigt"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_boutique"
+                android:layout_width="79dp"
+                android:layout_height="40dp"
+                android:background="@drawable/main_tab_boutique_bg"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:text="@string/topic"
+                android:textColor="@color/main_tab_font_color"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radio_topic"
+                android:layout_width="79dp"
+                android:layout_height="40dp"
+                android:background="@drawable/main_tab_topic_bg"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="@string/boutique"
+                android:paddingRight="10dp"
+                android:textColor="@color/main_tab_font_color"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <ImageButton
+            android:id="@+id/main_set_btn"
+            android:layout_width="@dimen/action_bar_set_heigt"
+            android:layout_height="@dimen/action_bar_set_heigt"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/main_search_btn"
+            android:background="@drawable/setting"
+            android:contentDescription="@string/app_name"
+            android:onClick="onSaleModeAction"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/main_search_btn"
+            android:layout_width="@dimen/action_bar_item_heigt"
+            android:layout_height="@dimen/action_bar_item_heigt"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/main_search_icon"
+            android:contentDescription="@string/app_name"
+            android:onClick="onSearchAction" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
